@@ -24,7 +24,7 @@ export default function Main() {
 
     const confirmAllOrder = () => {
         navigate("/confirmOrder", { replace: true });
-        window.location.reload();
+        // window.location.reload();
     };
 
     return (
