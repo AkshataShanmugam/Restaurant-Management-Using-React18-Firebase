@@ -9,23 +9,27 @@ export default function Navbar() {
     if (check){
       return (
         <nav>
-          <img src={logo} className="nav--logo" />
-          <div className="nav--components"> 
-            <Link to = "/"> HOME </Link>
-            <Link to = "/toOrder"> TO ORDER </Link>
-            <Link to = "/logout"> LOG OUT </Link>
+          <div className = "nav--div">
+            <img src={logo} className="nav--logo" />
+            <div className="nav--components"> 
+              <Link to = "/"> HOME </Link>
+              <Link to = "/toOrder"> TO ORDER </Link>
+              <Link to = "/logout"> LOG OUT </Link>
+            </div>
           </div>
         </nav>
       )
     } else{
     return (
         <nav>
-          <img src={logo} className="nav--logo" />
-          <div className="nav--components"> 
-            <Link to = "/"> HOME </Link>
-            <Link to = "/toOrder"> TO ORDER </Link>
-            <Link to = "/signup"> SIGN UP </Link>
-            <Link to = "/signin"> LOGIN </Link>
+          <div className="nav--div"> 
+            <img src={logo} className="nav--logo" />
+            <div className="nav--components"> 
+              <Link to = "/"> HOME </Link>
+              <Link to = "/toOrder"> TO ORDER </Link>
+              <Link to = "/signup"> SIGN UP </Link>
+              <Link to = "/signin"> LOGIN </Link>
+            </div>
           </div>
         </nav>
       );
