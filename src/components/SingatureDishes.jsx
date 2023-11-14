@@ -2,7 +2,6 @@ import React from "react";
 import star from '../images/star.png'
 
 import appetizer from '../images/appetizer-platter.png'
-import appetizer2 from "../../dist/assets/appetizer-platter-d8ee8aac.png"
 import caesar from '../images/caesar-salad.png'
 import spaghetti from '../images/spaghetti-and-meatballs.png'
 import salmon from '../images/grilled-salmon.png'
@@ -16,9 +15,6 @@ import filetMignon from '../images/filet-mignon.png';
 import cremeBrulee from '../images/creme-brulee.png';
 
 export default function Card(props) {
-    console.log("2", appetizer2);
-    console.log("1", appetizer);
-    console.log("propscoverImg", props.item.coverImg);
 
     let badgeText
     let image = "";
@@ -26,31 +22,33 @@ export default function Card(props) {
         badgeText = "SOLD OUT FOR THE EVENING"
     }
 
-    if ("/src/images/" + props.item.coverImg === appetizer) {
+    if ("/assets/" + props.item.coverImg+"" === appetizer) {
         image = appetizer
-    } else if ("/src/images/" + props.item.coverImg === caesar) {
+    } else if ("/assets/" + props.item.coverImg === caesar) {
         image = caesar
-    } else if ("/src/images/" + props.item.coverImg === spaghetti) {
+    } else if ("/assets/" + props.item.coverImg === spaghetti) {
         image = spaghetti
-    } else if ("/src/images/" + props.item.coverImg === salmon) {
+    } else if ("/assets/" + props.item.coverImg === salmon) {
         image = salmon
-    } else if ("/src/images/" + props.item.coverImg === chocolava) {
+    } else if ("/assets/" + props.item.coverImg === chocolava) {
         image = chocolava
-    } else if ("/src/images/" + props.item.coverImg === chickenMarsala) {
+    } else if ("/assets/" + props.item.coverImg === chickenMarsala) {
         image = chickenMarsala;
-      } else if ("/src/images/" + props.item.coverImg === newYorkStripSteak) {
+      } else if ("/assets/" + props.item.coverImg === newYorkStripSteak) {
         image = newYorkStripSteak;
-      } else if ("/src/images/" + props.item.coverImg === tiramisu) {
+      } else if ("/assets/" + props.item.coverImg === tiramisu) {
         image = tiramisu;
-      } else if ("/src/images/" + props.item.coverImg === frenchOnionSoup) {
+      } else if ("/assets/" + props.item.coverImg === frenchOnionSoup) {
         image = frenchOnionSoup;
-      } else if ("/src/images/" + props.item.coverImg === lobsterMacAndCheese) {
+      } else if ("/assets/" + props.item.coverImg === lobsterMacAndCheese) {
         image = lobsterMacAndCheese;
-      } else if ("/src/images/" + props.item.coverImg === filetMignon) {
+      } else if ("/assets/" + props.item.coverImg === filetMignon) {
         image = filetMignon;
-      } else if ("/src/images/" + props.item.coverImg === cremeBrulee) {
+      } else if ("/assets/" + props.item.coverImg === cremeBrulee) {
         image = cremeBrulee;
       }
+
+    console.log(image);
 
     return (
         <div className="card">
