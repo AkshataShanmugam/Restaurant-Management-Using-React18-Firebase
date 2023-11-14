@@ -47,6 +47,8 @@ export default function Card(props) {
       } else if ("/src/images/" + props.item.coverImg === cremeBrulee) {
         image = cremeBrulee;
       }
+
+    console.log(image)
     
     return (
         <div className="card">
