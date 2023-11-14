@@ -453,5 +453,10 @@ section {
     background-color: #333;
     color: #fff;
 }
-  
+
+.checkOut--null-text{
+    text-align: center;
+    padding: 50px;
+    margin: 50px;
+}
   
