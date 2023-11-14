@@ -2,7 +2,7 @@ import React from "react";
 import star from '../images/star.png'
 
 import appetizer from '../images/appetizer-platter.png'
-import appetizer2 from "../../dist/assets/appertizer-platter-d8eeaac.png"
+import appetizer2 from "../../dist/assets/appetizer-platter-d8ee8aac.png"
 import caesar from '../images/caesar-salad.png'
 import spaghetti from '../images/spaghetti-and-meatballs.png'
 import salmon from '../images/grilled-salmon.png'
