@@ -17,7 +17,7 @@ import cremeBrulee from '../images/creme-brulee.png';
 
 export default function Card(props) {
     console.log("2", appetizer2);
-    console.log("1", appertizer);
+    console.log("1", appetizer);
     console.log("propscoverImg", props.item.coverImg);
 
     let badgeText
