@@ -10,6 +10,8 @@ import Menu from "./components/SingatureDishes.jsx"
 import Logout from "../pages/Logout.jsx"
 import Success from "../pages/OrderSuccess.jsx"
 
+import CheckOut from "../pages/CheckOut.jsx"
+
 export default function App() {
     return (
         <div>
@@ -25,6 +27,7 @@ export default function App() {
                     <Route path="/placeOrder" element={<Orders />} />
                     <Route path="/confirmOrder" element={<Confirm />} />
                     <Route path="/orderSuccess" element={<Success />} />
+                    <Route path="/checkOut" element={ <CheckOut />} />
                 </Routes>
             </BrowserRouter>
         </div>
