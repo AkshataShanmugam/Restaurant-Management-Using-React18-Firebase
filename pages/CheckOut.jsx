@@ -12,7 +12,7 @@ const CheckOut = () => {
     const navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
 
-    console.log("dadada", [data[0]])
+    console.log("dadada", Object.values(data[0]))
 
     const handleOptionChange = (event) => {
         const selectedValue = event.target.value;
