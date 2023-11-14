@@ -25,7 +25,12 @@ nav {
 .nav--logo {
     max-width: 500px;
     border-radius: 3px;
+}
 
+.nav--div {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 section {
