@@ -48,7 +48,7 @@ export default function Card(props) {
         image = cremeBrulee;
       }
 
-    console.log(image)
+    console.log("Image locations: ", image);
     
     return (
         <div className="card">
