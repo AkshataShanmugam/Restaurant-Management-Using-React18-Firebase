@@ -20,7 +20,7 @@ export default function Main() {
                 item={item}
             />
             // 
-            console.log("checking src", item);
+            // console.log("checking src", item);
             // 
         )
     }) 
