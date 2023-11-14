@@ -10,6 +10,7 @@ import GetSignedInEmail from "./SignInCheck.jsx"
 
 const CheckOut = () => {
     const check = GetSignedInEmail();
+    console.log("curr email", check);
     localStorage.setItem('emailId', JSON.stringify(check));
     const navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
