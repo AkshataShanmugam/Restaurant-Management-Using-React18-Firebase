@@ -12,9 +12,9 @@ const ConfirmOrder = () => {
     const navigate = useNavigate();
     const storedItems = JSON.parse(localStorage.getItem('menuItems')) || {};
     const userOrder = storedItems; 
-
+    //
     console.log("storeditems:", storedItems);
-
+    //
     const specials = data.map(item => {
         return (
             <SpecialDishes
