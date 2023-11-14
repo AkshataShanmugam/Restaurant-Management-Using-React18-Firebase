@@ -33,10 +33,12 @@ export default function Main() {
     return (
         <div className="makeOrders--div">
             <nav>
-                <img src={logo} className="nav--logo" />
-                <div className="nav--components"> 
-                    <Link to = "/"> HOME </Link>
-                    <Link to = "/logout"> LOG OUT </Link>
+                <div className = "nav--div">
+                    <img src={logo} className="nav--logo" />
+                    <div className="nav--components"> 
+                        <Link to = "/"> HOME </Link>
+                        <Link to = "/logout"> LOG OUT </Link>
+                    </div>
                 </div>
             </nav>
             <section className="cards-list">
