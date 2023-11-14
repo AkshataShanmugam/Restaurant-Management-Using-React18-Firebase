@@ -153,7 +153,7 @@ export default [
       title: "Caesar Salad",
       description: "A classic Caesar salad made with romaine lettuce, Parmesan cheese, croutons, and anchovy dressing.",
       price: 12.99,
-      coverImg: "caesar-saladd154f30f.png",
+      coverImg: "caesar-salad-154f30f.png",
       stats: {
         rating: 4.7,
         reviewCount: 55
