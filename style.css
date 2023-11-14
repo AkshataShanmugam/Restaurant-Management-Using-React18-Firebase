@@ -164,7 +164,6 @@ section {
     height: 30px;
     padding: 5px;
     border-radius: 15px;
-    background-color:  rgb(181, 221, 126);
     color: #050505;
     border: 2px solid #000000;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out; 
@@ -181,8 +180,7 @@ section {
     font-weight: bolder;
     padding: 15px;
     border-radius: 15px;
-    border: 1px solid #ffffff;
-    background-color:rgb(181, 221, 126);
+    border: 2px solid #c5baba;
     transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;  
     display: flex;
     flex-direction: column;
