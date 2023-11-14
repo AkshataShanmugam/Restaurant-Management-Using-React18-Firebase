@@ -9,13 +9,10 @@ import logo from "../src/images/logo.png";
 // import GetSignedInEmail from "./SignInCheck.jsx"
 
 const CheckOut = () => {
-    // const check = GetSignedInEmail();
-    // console.log("curr email", check);
-    // localStorage.setItem('emailId', JSON.stringify(check));
     const navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
 
-    // console.log("da", data[0]);
+    let data = data[0]
 
     const handleOptionChange = (event) => {
         const selectedValue = event.target.value;
@@ -32,7 +29,7 @@ const CheckOut = () => {
     //     databaseURL: "https://restaurant-management-v18-default-rtdb.firebaseio.com/"
     // };
     
-    const specials = data[0].map(item => {
+    specials = data[0].map(item => {
         return (
             <SpecialDishes
                 key={item.id}
