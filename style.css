@@ -55,7 +55,8 @@ section {
 
 
 .hero--photo {
-    max-width: 1200px;
+/*     max-width: 1200px; */
+    min-width: 90vw;
     align-self: center;
 }
 
