@@ -19,6 +19,9 @@ export default function Main() {
                 key={item.id}
                 item={item}
             />
+            // 
+            console.log("checking src", item);
+            // 
         )
     }) 
 
