@@ -5,7 +5,7 @@ export default [
       title: "French Onion Soup",
       description: "A classic French soup made with caramelized onions and topped with a crouton and melted Gruyère cheese.",
       price: 10.99,
-      coverImg: "french-onion-soup.png",
+      coverImg: "french-onion-soup-53886239.png",
       stats: {
         rating: 4.8,
         reviewCount: 45
@@ -20,7 +20,7 @@ export default [
         title: "French Onion Soup",
         description: "A classic French soup made with caramelized onions and topped with a crouton and melted Gruyère cheese.",
         price: 10.99,
-        coverImg: "french-onion-soup.png",
+        coverImg: "french-onion-soup-53886239.png",
         stats: {
           rating: 4.8,
           reviewCount: 45
@@ -35,7 +35,7 @@ export default [
         title: "French Onion Soup",
         description: "A classic French soup made with caramelized onions and topped with a crouton and melted Gruyère cheese.",
         price: 10.99,
-        coverImg: "french-onion-soup.png",
+        coverImg: "french-onion-soup-53886239.png",
         stats: {
           rating: 4.8,
           reviewCount: 45
@@ -50,7 +50,7 @@ export default [
       title: "Appetizer Platter",
       description: "A selection of our most popular appetizers, including fried calamari, shrimp cocktail, and bruschetta.",
       price: 15.99,
-      coverImg: "appetizer-platter.png",
+      coverImg: "appetizer-platter-d8ee8aac.png",
       stats: {
         rating: 4.8,
         reviewCount: 12
@@ -66,7 +66,7 @@ export default [
       title: "Spaghetti and Meatballs",
       description: "A classic Italian dish made with spaghetti, meatballs, and marinara sauce.",
       price: 16.99,
-      coverImg: "spaghetti-and-meatballs.png",
+      coverImg: "spaghetti-and-meatballs-66857140.png",
       stats: {
         rating: 4.9,
         reviewCount: 23
@@ -80,7 +80,7 @@ export default [
       title: "Grilled Salmon",
       description: "A grilled salmon fillet served with roasted potatoes and asparagus.",
       price: 24.99,
-      coverImg: "grilled-salmon.png",
+      coverImg: "grilled-salmon-51439970.png",
       stats: {
         rating: 4.6,
         reviewCount: 58
@@ -94,7 +94,7 @@ export default [
       title: "Chicken Marsala",
       description: "A classic Italian dish made with chicken breast, mushrooms, and marsala wine.",
       price: 18.99,
-      coverImg: "chicken-marsala.png",
+      coverImg: "chicken-marsala-5e9cce84.png",
       stats: {
         rating: 4.7,
         reviewCount: 34
@@ -103,12 +103,13 @@ export default [
       availability: 1,
       location: "In-house"
     },
+  
     {
       id: 6,
       title: "New York Strip Steak",
       description: "A juicy and tender New York strip steak served with your choice of two sides.",
       price: 29.99,
-      coverImg: "new-york-strip-steak.png",
+      coverImg: "new-york-strip-steak-382dd789.png",
       stats: {
         rating: 4.8,
         reviewCount: 42
@@ -122,7 +123,7 @@ export default [
       title: "Lobster Mac and Cheese",
       description: "A delicious and decadent dish made with lobster, pasta, and a creamy cheese sauce.",
       price: 26.99,
-      coverImg: "lobster-mac-and-cheese.png",
+      coverImg: "lobster-mac-and-cheese-74a77835.png",
       stats: {
         rating: 4.9,
         reviewCount: 38
@@ -136,7 +137,7 @@ export default [
       title: "Filet Mignon",
       description: "A tender and flavorful filet mignon served with your choice of two sides.",
       price: 39.99,
-      coverImg: "filet-mignon.png",
+      coverImg: "filet-mignon-ce2d4dd3.png",
       stats: {
         rating: 4.7,
         reviewCount: 49
@@ -152,7 +153,7 @@ export default [
       title: "Caesar Salad",
       description: "A classic Caesar salad made with romaine lettuce, Parmesan cheese, croutons, and anchovy dressing.",
       price: 12.99,
-      coverImg: "caesar-salad.png",
+      coverImg: "caesar-saladd154f30f.png",
       stats: {
         rating: 4.7,
         reviewCount: 55
@@ -168,7 +169,7 @@ export default [
       title: "Chocolate Lava Cake",
       description: "A warm chocolate lava cake served with vanilla ice cream and whipped cream.",
       price: 8.99,
-      coverImg: "chocolate-lava-cake.png",
+      coverImg: "chocolate-lava-cake-8646030a.png",
       stats: {
         rating: 5.0,
         reviewCount: 56
@@ -182,7 +183,7 @@ export default [
       title: "Tiramisu",
       description: "A classic Italian dessert made with ladyfingers dipped in coffee and layered with a creamy mascarpone filling.",
       price: 7.99,
-      coverImg: "tiramisu.png",
+      coverImg: "tiramisu-d475a1ea.png",
       stats: {
         rating: 4.9,
         reviewCount: 65
@@ -196,7 +197,7 @@ export default [
       title: "Crème Brûlée",
       description: "A classic French dessert made with a custard base and a caramelized sugar crust.",
       price: 9.99,
-      coverImg: "creme-brulee.png",
+      coverImg: "creme-brulee-ea1db283.png",
       stats: {
         rating: 4.8,
         reviewCount: 51
