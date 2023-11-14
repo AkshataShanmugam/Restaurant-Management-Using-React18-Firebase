@@ -28,8 +28,32 @@ const CheckOut = () => {
     // const appSettings = {
     //     databaseURL: "https://restaurant-management-v18-default-rtdb.firebaseio.com/"
     // };
+
+    function flattenDictionary(dict) {
+        const result = [];
+        
+        for (const key1 in dict) {
+            const level1 = dict[key1];
+            for (const key2 in level1) {
+                const level2 = level1[key2];
+                if (level2.hasOwnProperty("id") && level2.hasOwnProperty("title")) {
+                    result.push({ "id": level2.id, "title": level2.title, "count": level2.count, "coverImg": level2.coverImg, "description":level2.description, "price":level2.price });
+                } else {
+                    for (const key3 in level2) {
+                        const level3 = level2[key3];
+                        result.push({ "id": level3.id, "title": level3.title, "count": level3.count, "coverImg": level3.coverImg, "description":level3.description, "price":level3.price });
+                    }
+                }
+            }
+        }
+        
+        return result;
+    }
+
+    const temp = flattenDictionary(Object.values(Object.values(data)));
     
-    const specials = (Object.values(data[0])).map(item => {
+    // const specials = (Object.values(data[0])).map(item => {
+    const specials = temp.map(item => {
         return (
             <SpecialDishes
                 key={item.id}
