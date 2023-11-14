@@ -29,7 +29,7 @@ const CheckOut = () => {
     //     databaseURL: "https://restaurant-management-v18-default-rtdb.firebaseio.com/"
     // };
     
-    const specials = ([data[0]]).map(item => {
+    const specials = (Object.values(data[0])).map(item => {
         return (
             <SpecialDishes
                 key={item.id}
