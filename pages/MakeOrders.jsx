@@ -29,20 +29,22 @@ export default function MakeOrders() {
   return (
     <div className="makeOrders--div">
       <nav>
-        <img src={logo} className="nav--logo" />
-        <div className="nav--components">
-          <select
-            onChange={handleOptionChange}
-            value={selectedOption}
-            className="nav--select"
-          >
-            <option value="" disabled hidden>
-              More Options
-            </option>
-            <option value="/">HOME</option>
-            <option value="/logout">LOG OUT</option>
-          </select>
-        </div>
+        <div className="nav--div">
+            <img src={logo} className="nav--logo" />
+            <div className="nav--components">
+              <select
+                onChange={handleOptionChange}
+                value={selectedOption}
+                className="nav--select"
+              >
+                <option value="" disabled hidden>
+                  More Options
+                </option>
+                <option value="/">HOME</option>
+                <option value="/logout">LOG OUT</option>
+              </select>
+            </div>
+          </div>
       </nav>
       <section className="cards-list">{specials}</section>
       <button className="button--navigate" onClick={confirmAllOrder}>
