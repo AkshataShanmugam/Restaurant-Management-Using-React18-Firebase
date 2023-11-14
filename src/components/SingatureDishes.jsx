@@ -16,8 +16,9 @@ import filetMignon from '../images/filet-mignon.png';
 import cremeBrulee from '../images/creme-brulee.png';
 
 export default function Card(props) {
-    console.log(appetizer2);
-    console.log(props.item.coverImg);
+    console.log("2", appetizer2);
+    console.log("1", appertizer);
+    console.log("propscoverImg", props.item.coverImg);
 
     let badgeText
     let image = "";
