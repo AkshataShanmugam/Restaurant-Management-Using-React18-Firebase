@@ -25,6 +25,7 @@ export default function Navbar() {
               <option value="/">HOME</option>
               <option value="/toOrder">TO ORDER</option>
               <option value="/logout">LOG OUT</option>
+              <option value="/checkOut">CHECK OUT</option>
             </select>
           </div>
         </div>
