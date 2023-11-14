@@ -15,6 +15,7 @@ import filetMignon from '../images/filet-mignon.png';
 import cremeBrulee from '../images/creme-brulee.png';
 
 export default function Card(props) {
+    console.log("Print hey");
 
     let badgeText
     let image
@@ -49,7 +50,7 @@ export default function Card(props) {
       }
 
     console.log("Image locations: ", image);
-    
+    console.log("Print oh oh");
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
