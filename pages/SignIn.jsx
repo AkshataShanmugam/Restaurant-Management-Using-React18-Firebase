@@ -30,6 +30,7 @@ const SignIn = () => {
         setMessage("User successfully logged in!");
         setIsVisible(true);
         emailID = email;
+        localStorage.setItem('emailId', JSON.stringify(email));
         // You might want to redirect the user to a new page upon successful login.
         navigate("/placeOrder");
       })
