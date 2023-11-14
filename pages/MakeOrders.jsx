@@ -42,6 +42,7 @@ export default function MakeOrders() {
                 </option>
                 <option value="/">HOME</option>
                 <option value="/logout">LOG OUT</option>
+                <option value="/checkOut">CHECK OUT</option>
               </select>
             </div>
           </div>
