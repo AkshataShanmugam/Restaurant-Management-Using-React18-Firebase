@@ -128,11 +128,11 @@ export default function Card(props) {
       }
     };
 
-    let badgeText
+    // let badgeText
     let image
-    if (props.item.availability === 0) {
-        badgeText = "SOLD OUT"
-    }
+    // if (props.item.availability === 0) {
+    //     badgeText = "SOLD OUT"
+    // }
 
     if ("/assets/" + props.item.coverImg === appetizer) {
         image = appetizer
@@ -162,7 +162,7 @@ export default function Card(props) {
     
     return (
       <div className="card">
-          {badgeText && <div className="card--badge">{badgeText}</div>}
+{/*           {badgeText && <div className="card--badge">{badgeText}</div>} */}
           <img src={image} className="card--image" />
           <div className="card--stats">
               <img src={star} className="card--star" />
