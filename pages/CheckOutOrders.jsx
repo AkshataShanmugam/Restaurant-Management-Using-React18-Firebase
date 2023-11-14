@@ -19,6 +19,7 @@ export default function displayOrders(props) {
     // console.log("props:", Object.values(props.item)[0])
     let image;
     console.log(props);
+    console.log(props[0]);
 
     // for (let k in Object.values(props.item)){
     //     let temp = (Object.entries(props.item)[k][1]);
