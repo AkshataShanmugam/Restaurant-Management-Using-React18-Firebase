@@ -6,16 +6,16 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import logo from "../src/images/logo.png";
 
-import GetSignedInEmail from "./SignInCheck.jsx"
+// import GetSignedInEmail from "./SignInCheck.jsx"
 
 const CheckOut = () => {
-    const check = GetSignedInEmail();
-    console.log("curr email", check);
-    localStorage.setItem('emailId', JSON.stringify(check));
+    // const check = GetSignedInEmail();
+    // console.log("curr email", check);
+    // localStorage.setItem('emailId', JSON.stringify(check));
     const navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
 
-    console.log("da", data[0]);
+    // console.log("da", data[0]);
 
     const handleOptionChange = (event) => {
         const selectedValue = event.target.value;
