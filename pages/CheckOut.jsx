@@ -12,7 +12,7 @@ const CheckOut = () => {
     const navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
 
-    let data = data[0]
+    console.log("dadada", data[0])
 
     const handleOptionChange = (event) => {
         const selectedValue = event.target.value;
@@ -29,7 +29,7 @@ const CheckOut = () => {
     //     databaseURL: "https://restaurant-management-v18-default-rtdb.firebaseio.com/"
     // };
     
-    specials = data[0].map(item => {
+    const specials = data[0].map(item => {
         return (
             <SpecialDishes
                 key={item.id}
