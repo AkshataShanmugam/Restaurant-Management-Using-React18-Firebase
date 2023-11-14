@@ -1,5 +1,6 @@
-import React, {useEffect} from 'react';
+import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
+import logo from "../src/images/logo.png";
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
@@ -12,9 +13,7 @@ const ConfirmOrder = () => {
     const navigate = useNavigate();
     const storedItems = JSON.parse(localStorage.getItem('menuItems')) || {};
     const userOrder = storedItems; 
-    //
-    console.log("storeditems:", storedItems);
-    //
+    
     const specials = data.map(item => {
         return (
             <SpecialDishes
@@ -23,6 +22,15 @@ const ConfirmOrder = () => {
             />
         )
     }) 
+
+    const [selectedOption, setSelectedOption] = useState("");
+
+    const handleOptionChange = (event) => {
+        const selectedValue = event.target.value;
+        setSelectedOption(selectedValue);
+        navigate(selectedValue);
+    };
+
 
     const returnToPage = () => {
         navigate("/placeOrder");
@@ -62,7 +70,24 @@ const ConfirmOrder = () => {
 
     return (
         <div>
-            {/* <Display /> */}
+            <nav>
+                <div className='nav--div'>
+                    <img src={logo} className="nav--logo" />
+                    <div className="nav--components">
+                    <select
+                        onChange={handleOptionChange}
+                        value={selectedOption}
+                        className="nav--select"
+                    >
+                        <option value="" disabled hidden>
+                        More Options
+                        </option>
+                        <option value="/">HOME</option>
+                        <option value="/logout">LOG OUT</option>
+                    </select>
+                    </div>
+                </div>
+            </nav>
             <section className="cards-list">
                 {specials}
             </section>
