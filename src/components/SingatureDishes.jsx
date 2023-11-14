@@ -15,10 +15,11 @@ import filetMignon from '../images/filet-mignon.png';
 import cremeBrulee from '../images/creme-brulee.png';
 
 export default function Card(props) {
-    console.log("Print hey");
+    console.log(appetizer);
+    console.log(props.item.coverImg);
 
     let badgeText
-    let image
+    let image = "";
     if (props.item.availability === 0) {
         badgeText = "SOLD OUT FOR THE EVENING"
     }
@@ -49,8 +50,6 @@ export default function Card(props) {
         image = cremeBrulee;
       }
 
-    console.log("Image locations: ", image);
-    console.log("Print oh oh");
     return (
         <div className="card">
             {badgeText && <div className="card--badge">{badgeText}</div>}
