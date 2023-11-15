@@ -42,11 +42,11 @@ const CheckOut = () => {
     }
     const StorageData = Data();
     const data = JSON.parse(localStorage.getItem('checkOutItems')) || [];
-    console.log("data", data);
+    // console.log("data", data);
 
     const temp = flattenDictionary(Object.values(Object.values(data)));
-    console.log("temp:", temp);
-    console.log("special", temp.length);
+    // console.log("temp:", temp);
+    // console.log("special", temp.length);
     if (temp.length === 0){
         return (
             <div>
@@ -112,6 +112,7 @@ const CheckOut = () => {
                             </option>
                             <option value="/">HOME</option>
                             <option value="/logout">LOG OUT</option>
+                            <option value="/placeOrder">PLACE ORDERS</option>
                         </select>
                         </div>
                     </div>
