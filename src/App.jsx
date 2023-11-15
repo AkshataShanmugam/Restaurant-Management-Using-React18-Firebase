@@ -29,7 +29,7 @@ export default function App() {
                     <Route path="/confirmOrder" element={<Confirm />} />
                     <Route path="/orderSuccess" element={<Success />} />
                     <Route path="/checkOut" element={ <CheckOut />} />
-                    <Route path="/makePayment" element={ <MakePayment />} />
+{/*                     <Route path="/makePayment" element={ <MakePayment />} /> */}
                 </Routes>
             </BrowserRouter>
         </div>
