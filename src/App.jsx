@@ -11,7 +11,7 @@ import Logout from "../pages/Logout.jsx"
 import Success from "../pages/OrderSuccess.jsx"
 
 import CheckOut from "../pages/CheckOut.jsx"
-import MakePayment from "../pages/MakePayment.jsx"
+// import MakePayment from "../pages/MakePayment.jsx"
 
 export default function App() {
     return (
