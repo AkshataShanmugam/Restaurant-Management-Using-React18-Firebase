@@ -40,7 +40,7 @@ const CheckOutData = () => {
     }, [menuItemsInDB, props]);
 
 
-    // localStorage.setItem('checkOutItems', JSON.stringify(mylist));
+    localStorage.setItem('checkOutItems', JSON.stringify(mylist));
     
     return (mylist)
     // <div>CheckOutData</div>
