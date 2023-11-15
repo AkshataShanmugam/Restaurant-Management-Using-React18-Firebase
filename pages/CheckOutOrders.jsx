@@ -15,16 +15,14 @@ import cremeBrulee from '../src/images/creme-brulee.png';
 
 
 export default function displayOrders(props) {
-    // props = Object.values(props.item);
-    // console.log("props:", Object.values(props.item)[0])
     let image;
-    console.log(props);
-    console.log(Object.values(props));
-
-    // for (let k in Object.values(props.item)){
-    //     let temp = (Object.entries(props.item)[k][1]);
-    //     console.log(temp)
-    // }
+    const counter = props.item.count;
+    const priceEach = props.item.price;
+    let storedPrice = JSON.parse(localStorage.getItem('checkOutTotalPrice'));
+    storedPrice += (counter * priceEach);
+    let final = storedPrice.toFixed(2);
+    localStorage.setItem('checkOutTotalPriceFinal', JSON.stringify(final));
+    localStorage.setItem('checkOutTotalPrice', JSON.stringify(storedPrice));
 
     if ("/assets/" + props.item.coverImg === appetizer) {
         image = appetizer
