@@ -107,7 +107,7 @@ const CheckOut = () => {
                             <option value="/">HOME</option>
                             <option value="/logout">LOG OUT</option>
                             <option value="/placeOrder">PLACE ORDERS</option>
-                            <option value="/makePayment">MAKE PAYMENT</option>
+{/*                             <option value="/makePayment">MAKE PAYMENT</option> */}
                         </select>
                         </div>
                     </div>
