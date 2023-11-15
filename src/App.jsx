@@ -11,6 +11,7 @@ import Logout from "../pages/Logout.jsx"
 import Success from "../pages/OrderSuccess.jsx"
 
 import CheckOut from "../pages/CheckOut.jsx"
+import MakePayment from "../pages/MakePayment.jsx"
 
 export default function App() {
     return (
@@ -28,6 +29,7 @@ export default function App() {
                     <Route path="/confirmOrder" element={<Confirm />} />
                     <Route path="/orderSuccess" element={<Success />} />
                     <Route path="/checkOut" element={ <CheckOut />} />
+                    <Route path="/makePayment" element={ <MakePayment />} />
                 </Routes>
             </BrowserRouter>
         </div>
