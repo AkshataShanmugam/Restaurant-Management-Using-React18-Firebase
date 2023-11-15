@@ -33,7 +33,11 @@ const CheckOutData = () => {
         }
     })
 
-    localStorage.setItem('checkOutItems', JSON.stringify(mylist));
+    setTimeout(() => {
+        localStorage.setItem('checkOutItems', JSON.stringify(mylist));
+        console.log("well")
+    }, 7000);
+    
     return (mylist)
 }
 
