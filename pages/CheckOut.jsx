@@ -20,6 +20,10 @@ const CheckOut = () => {
         navigate("/")
     }
     
+    const returnToPayment = () => {
+        navigate("/makePayment")
+    }
+
     function flattenDictionary(dict) {
         const result = [];
         
@@ -115,11 +119,9 @@ const CheckOut = () => {
                 <section className="cards-list">
                     {specials}
                 </section>
-                <button className="button--navigate" onClick={returnToPage}> Order total: $ {price} </button>
-{/*                 <button className="button--navigate" onClick={returnToPage}> RETURN HOME </button> */}
+                <button className="button--navigate"> Order total: $ {price} </button>
             </div>
         )
-
     }
 }
 
