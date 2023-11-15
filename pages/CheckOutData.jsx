@@ -4,8 +4,8 @@ import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.
 import React from 'react'
 
 const CheckOutData = () => {
-    let mylist = [];
-
+    let mylist = JSON.parse(localStorage.getItem('checkOutItems')) || [];
+    
     const appSettings = {
         databaseURL: "https://restaurant-management-v18-default-rtdb.firebaseio.com/"
     };
@@ -33,10 +33,7 @@ const CheckOutData = () => {
         }
     })
 
-    setTimeout(() => {
-        localStorage.setItem('checkOutItems', JSON.stringify(mylist));
-        console.log("well")
-    }, 7000);
+    localStorage.setItem('checkOutItems', JSON.stringify(mylist));
     
     return (mylist)
 }
