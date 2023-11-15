@@ -107,6 +107,7 @@ const CheckOut = () => {
                             <option value="/">HOME</option>
                             <option value="/logout">LOG OUT</option>
                             <option value="/placeOrder">PLACE ORDERS</option>
+                            <option value="/makePayment">MAKE PAYMENT</option>
                         </select>
                         </div>
                     </div>
@@ -115,7 +116,7 @@ const CheckOut = () => {
                     {specials}
                 </section>
                 <button className="button--navigate" onClick={returnToPage}> Order total: $ {price} </button>
-                <button className="button--navigate" onClick={returnToPage}> RETURN HOME </button>
+{/*                 <button className="button--navigate" onClick={returnToPage}> RETURN HOME </button> */}
             </div>
         )
 
