@@ -40,7 +40,7 @@ const CheckOut = () => {
         
         return result;
     }
-
+    const StorageData = Data();
     const data = JSON.parse(localStorage.getItem('checkOutItems')) || [];
     console.log("data", data);
 
