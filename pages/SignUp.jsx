@@ -19,6 +19,7 @@ const SignUp = () => {
       .then((userCredential) => {
         setMessage("User successfully signed up!");
         setIsVisible(true);
+        localStorage.setItem('emailId', JSON.stringify(email));
         navigate("/placeOrder");
       })
       .catch((error) => {
