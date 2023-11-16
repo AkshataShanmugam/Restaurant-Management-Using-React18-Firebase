@@ -11,19 +11,9 @@ const SignIn = () => {
   const [isVisible, setIsVisible] = useState(false);
   let emailID = ""
   const navigate = useNavigate();
-  // let LoginError =""
   
   const signIn = (e) => {
     e.preventDefault();
-    // createUserWithEmailAndPassword(auth, email, password)
-    //   .then((userCredential) => {
-    //     LoginError = false;
-    //   })
-    //   .catch((error) => {
-    //     if (error.code === "auth/email-already-in-use") {
-    //       LoginError = true;
-    //     } 
-    //   })
     
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
@@ -31,18 +21,12 @@ const SignIn = () => {
         setIsVisible(true);
         emailID = email;
         localStorage.setItem('emailId', JSON.stringify(email));
-        // You might want to redirect the user to a new page upon successful login.
         navigate("/placeOrder");
       })
       .catch((error) => {
-      emailID = null;
-        // console.log(LoginError)
-        // if (LoginError){
-        //   setMessage("Email ID already registered please sign in.");
-        //   setIsVisible(true);
-        // } else 
+      emailID = null; 
         if (error.code === "auth/invalid-login-credentials"){
-          setMessage("Invalid password.");
+          setMessage("Invalid email or password.");
           setIsVisible(true);
         } else if (error.code === "auth/wrong-password"){
           setMessage("Access to this account has been temporarily disabled due to many failed attempts. You can immediately restore it by resetting your password or you can try again later.");
