@@ -264,11 +264,27 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 350px;
-    height: 400px;
+    width: 75vw;
+    height: 40vh;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
-    
+    background-color: aliceblue;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.sign-up-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 75vw;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
     background-color: aliceblue;
 }
 
