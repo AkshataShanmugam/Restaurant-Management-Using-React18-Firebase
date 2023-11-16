@@ -54,6 +54,9 @@ const SignUp = () => {
             <form onSubmit={signUp}>
               <br></br>
               <h1>Create Account</h1>
+              <p>
+                Join our community and start exploring amazing features! Fill out the form below to get started.
+              </p>
               <input className="sign-in--input"
                 type="email"
                 placeholder="Enter your email"
@@ -69,16 +72,22 @@ const SignUp = () => {
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
               <br></br>
-              <button className ="sign-in--button" type="submit">Sign Up</button>
+              <button className ="toOrder--links" type="submit">Sign Up</button>
               <br></br>
               <p className="sign-in--pass">Please ensure that password is greater than 6 characters.</p>
             </form>
-            {/* <br></br>
-            <div className="sign-in--links">
-                <Link className ="sign-in--link" to = "/"> Back to Home </Link>
-                <Link className ="sign-in--link" to = "/signin"> Sign In Instead? </Link>
-              </div>
-            <br></br> */}
+            <div>
+                <h2>Why Sign Up?</h2>
+                <ul>
+                  <li>Access exclusive features and content.</li>
+                  <li>Save your favorite items and preferences.</li>
+                  <li>Get personalized recommendations.</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Special Offer!</h2>
+                <p>Sign up now and get 10% off your first purchase!</p>
+            </div>
             <br></br>
           </div>
         </div>
