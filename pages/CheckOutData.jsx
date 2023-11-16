@@ -4,7 +4,7 @@ import { getDatabase, ref, onValue } from 'https://www.gstatic.com/firebasejs/9.
 
 const CheckOutData = () => {
   const [mylist, setMyList] = useState([]);
-  const storedItems = JSON.parse(localStorage.getItem('emailId')) || {};
+  const storedItems = JSON.parse(localStorage.getItem('tableNumber')) || {};
   const props = storedItems;
 
   const appSettings = {
