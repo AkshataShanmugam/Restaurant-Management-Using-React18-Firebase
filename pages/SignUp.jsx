@@ -11,6 +11,14 @@ const SignUp = () => {
   const [message, setMessage] = useState("");
   const [isVisible, setIsVisible] = useState(false);
   //
+  const [tableNumber, setTableNumber] = useState("");
+
+  const handleInputChange = (e) => {
+    setTableNumber(e.target.value);
+    console.log("Current tableNumber:", e.target.value);
+    localStorage.setItem('tableNumber', JSON.stringify(e.target.value));
+  };
+  
   const navigate = useNavigate();
 
   const signUp = (e) => {
@@ -71,6 +79,14 @@ const SignUp = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               ></input>
+              <br></br>
+              <input
+                  className="sign-in--input"
+                  type="tableNumber"
+                  placeholder="Assigned table number"
+                  value={tableNumber}
+                  onChange={handleInputChange}
+              />
               <br></br>
               <button className ="toOrder--links" type="submit">Sign Up</button>
               <br></br>
