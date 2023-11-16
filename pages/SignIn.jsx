@@ -11,6 +11,10 @@ const SignIn = () => {
   const [isVisible, setIsVisible] = useState(false);
   let emailID = ""
   const navigate = useNavigate();
+
+  const navigateToPage = () => {
+    navigate("/forgotPassword");
+  };
   
   const signIn = (e) => {
     e.preventDefault();
@@ -80,7 +84,7 @@ const SignIn = () => {
             </button>
             <br></br>
           </form>
-          <br></br>
+          <button className="toOrder--links" onClick={navigateToPage}>Forgot Password</button>
           {/* <div className="sign-in--links">
             <Link className="sign-in--link" to="/">
               Back to Home
