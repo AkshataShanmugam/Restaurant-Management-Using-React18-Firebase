@@ -50,7 +50,7 @@ const SignUp = () => {
       <div className="sign-in--div">
         <Nav />
         <div className="background-fill">
-          <div className="sign-in-container">
+          <div className="sign-up-container">
             <form onSubmit={signUp}>
               <br></br>
               <h1>Create Account</h1>
