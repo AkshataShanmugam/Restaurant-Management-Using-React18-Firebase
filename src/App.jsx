@@ -9,7 +9,7 @@ import PreLoader from "../pages/PreLoader.jsx"
 import Menu from "./components/SingatureDishes.jsx"
 import Logout from "../pages/Logout.jsx"
 import Success from "../pages/OrderSuccess.jsx"
-
+import ForgotPassword from "../pages/ForgotPassword.jsx"
 import CheckOut from "../pages/CheckOut.jsx"
 // import MakePayment from "../pages/MakePayment.jsx"
 
@@ -29,6 +29,7 @@ export default function App() {
                     <Route path="/confirmOrder" element={<Confirm />} />
                     <Route path="/orderSuccess" element={<Success />} />
                     <Route path="/checkOut" element={ <CheckOut />} />
+                    <Route path="/forgotPassword" element={ <ForgotPassword />} />
 {/*                     <Route path="/makePayment" element={ <MakePayment />} /> */}
                 </Routes>
             </BrowserRouter>
