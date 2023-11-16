@@ -50,10 +50,11 @@ const ConfirmOrder = () => {
         const database = getDatabase(app);
         const menuItemsInDB = ref(database, "menuItems");
 
-        const string =  Object.keys(userOrder);
-        const new_key = string[0].replace(/[.#$\/[\]]/g, "*");
+        // const string =  Object.keys(userOrder);
+        // const new_key = string[0].replace(/[.#$\/[\]]/g, "*");
+        const table = JSON.parse(localStorage.getItem('tableNumber')) || {};
         const value = Object.values(userOrder);
-        const object = Object.assign({}, { [new_key]: value });
+        const object = Object.assign({}, { [table]: value });
 
         console.log(object);
 
