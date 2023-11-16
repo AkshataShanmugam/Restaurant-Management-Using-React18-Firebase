@@ -2,12 +2,16 @@ import { createUserWithEmailAndPassword } from "firebase/auth";
 import React, { useState } from "react";
 import { auth } from "./firebase";
 import Nav from "../src/components/Navbar";
+//
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [message, setMessage] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+  //
+  const navigate = useNavigate();
 
   const signUp = (e) => {
     e.preventDefault();
@@ -15,6 +19,7 @@ const SignUp = () => {
       .then((userCredential) => {
         setMessage("User successfully signed up!");
         setIsVisible(true);
+        navigate("/placeOrder");
       })
       .catch((error) => {
         if (error.code === "auth/email-already-in-use") {
