@@ -11,7 +11,7 @@ const Logout = () => {
         signOut(auth)
         .then(() => {
             console.log("sign out successful");
-            
+            localStorage.setItem('emailId', JSON.stringify([]));
             navigate("/");
         })
         .catch((error) => console.log(error));
