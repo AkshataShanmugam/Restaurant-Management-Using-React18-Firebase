@@ -74,6 +74,7 @@ const SignIn = () => {
           <form onSubmit={signIn}>
             <br></br>
             <h1>Log In to your Account</h1>
+            <p className="login--instructions"> Welcome back! Log in to your account to continue exploring our platform. </p>
             <input
               className="sign-in--input"
               type="email"
@@ -90,7 +91,7 @@ const SignIn = () => {
               onChange={(e) => setPassword(e.target.value)}
             ></input>
             <br></br>
-            <button className="sign-in--button" type="submit">
+            <button className="toOrder--links" type="submit">
               Log In
             </button>
             <br></br>
