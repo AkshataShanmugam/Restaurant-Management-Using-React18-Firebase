@@ -424,6 +424,7 @@ ul{
     color: #333;
     background-color: #fff;
     transition: all 0.3s ease;
+    font-weight: bolder;
 }
 
 .toOrder--links:hover {
