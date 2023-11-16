@@ -79,9 +79,9 @@ const SignUp = () => {
             <div>
                 <h2>Why Sign Up?</h2>
                 <ul>
-                  <li>Access exclusive features and content.</li>
                   <li>Save your favorite items and preferences.</li>
-                  <li>Get personalized recommendations.</li>
+                  <li>Have a contact-less food ordering experience.</li>
+                  <li>Explore the dishes at your own convenience.</li>
                 </ul>
             </div>
             <div>
