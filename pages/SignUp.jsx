@@ -93,14 +93,6 @@ const SignUp = () => {
               <p className="sign-in--pass">Please ensure that password is greater than 6 characters.</p>
             </form>
             <div>
-                <h2>Why Sign Up?</h2>
-                <ul>
-                  <li>Save your favorite items and preferences.</li>
-                  <li>Have a contact-less food ordering experience.</li>
-                  <li>Explore the dishes at your own convenience.</li>
-                </ul>
-            </div>
-            <div>
                 <h2>Special Offer!</h2>
                 <p>Sign up now and get 10% off your first purchase!</p>
             </div>
