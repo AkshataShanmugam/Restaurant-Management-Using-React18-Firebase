@@ -300,6 +300,7 @@ ul{
     border-radius: 10px;
     border: 1px solid black;
     width: 50vw;
+    max-width: 400px;
 }
 
 .sign-in--button{
