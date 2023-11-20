@@ -299,6 +299,7 @@ ul{
     flex-wrap: wrap;
     border-radius: 10px;
     border: 1px solid black;
+    width: 50vw;
 }
 
 .sign-in--button{
