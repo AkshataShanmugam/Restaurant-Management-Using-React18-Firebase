@@ -24,7 +24,7 @@ const SignUp = () => {
       alert('Please fill in all fields.');
     } else if(!email){
       alert('Please fill in email ID');
-    } else if (!regex.test(email)) {
+    } else if (!regex.test(email) || !email.includes("@") || !email.includes(".")) {
       alert('Please enter a valid email address');
     } else if(!password){
       alert('Please fill in password')
