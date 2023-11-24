@@ -32,7 +32,7 @@ const SignUp = () => {
       alert('Password must be at least 6 characters long');
     } else if(!tableNumber){
       alert('Please fill in table number')
-    } else if(!Number.isInteger(parseInt(tableNumber))){
+    } else if(!/^\d+$/.test(tableNumber)){
       alert('Please fill in an integer table number')
     } else{
       createUserWithEmailAndPassword(auth, email, password)
