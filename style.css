@@ -5,6 +5,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    font-display: swap;
 }
 
 nav {
@@ -405,7 +406,6 @@ ul{
 
 /*  */
 .toOrder {
-    font-family: 'Arial', sans-serif;
     text-align: center;
     background: #f7f7f7; /* Light Gray */
     padding: 40px;
