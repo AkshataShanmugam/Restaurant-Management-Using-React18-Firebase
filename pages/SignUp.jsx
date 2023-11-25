@@ -8,7 +8,7 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [tableNumber, setTableNumber] = useState("");
-  const regex = /^\w+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleInputChange = (e) => {
     setTableNumber(e.target.value);
@@ -17,14 +17,15 @@ const SignUp = () => {
   };
 
   const navigate = useNavigate();
-
   const signUp = (e) => {
     e.preventDefault();
     if (!email && !password && !tableNumber) {
       alert('Please fill in all fields.');
-    } else if(!email){
+    } else if (!email){
       alert('Please fill in email ID');
-    } else if (!regex.test(email) || !email.includes("@") || !email.includes(".")) {
+    } else if (email === undefined) {
+      alert('Please enter a valid email address');
+    } else if (!regex.test(email)) {
       alert('Please enter a valid email address');
     } else if(!password){
       alert('Please fill in password')
@@ -32,7 +33,7 @@ const SignUp = () => {
       alert('Password must be at least 6 characters long');
     } else if(!tableNumber){
       alert('Please fill in table number')
-    } else if(!/^\d+$/.test(tableNumber)){
+    } else if(!/^\d+$/.test(tableNumber) || (tableNumber < 1)){
       alert('Please fill in an integer table number')
     } else{
       createUserWithEmailAndPassword(auth, email, password)
@@ -42,10 +43,12 @@ const SignUp = () => {
           navigate("/placeOrder");
         })
         .catch((error) => {
+          console.log(error.code)
           if (error.code === "auth/email-already-in-use") {
             alert("User already exists!");
           } else {
-            alert("An error occurred while signing up.");
+            console.log(error.code)
+            alert("An error occurred while signing up.", error.code);
           }
         });
       }
