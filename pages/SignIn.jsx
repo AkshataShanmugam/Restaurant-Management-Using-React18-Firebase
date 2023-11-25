@@ -48,10 +48,11 @@ const SignIn = () => {
             navigate("/placeOrder");
           })
           .catch((error) => {
+            console.log(error);
           emailID = null; 
             if (error.code === "auth/invalid-login-credentials"){
-              alert("Invalid email or password.");
-            } else if (error.code === "auth/wrong-password"){
+              alert("Wrong email or password.");
+            } else if (error.code === "auth/too-many-requests"){
               alert("Access to this account has been temporarily disabled due to many failed attempts. You can immediately restore it by resetting your password or you can try again later.");
             } else {
               alert("An error occurred while signing in. ", error.code);
@@ -67,7 +68,7 @@ const SignIn = () => {
       <div className="sign-in-container">
         <form onSubmit={signIn}>
           <br></br>
-          <h1>Log In to your Account</h1>
+          <h1>Login to your Account</h1>
           <p className="login--instructions"> Welcome back! Log in to your account to continue exploring our platform. </p>
           <input
             className="sign-in--input"
@@ -92,7 +93,7 @@ const SignIn = () => {
               value={tableNumber}
               onChange={handleInputChange}/>
           <br></br>
-          <button className="toOrder--links" type="submit"> Log In </button>
+          <button className="toOrder--links" type="submit"> Log In! </button>
           <br></br>
         </form>
         <button className="toOrder--links" onClick={navigateToPage}>Forgot Password</button>
